@@ -1,0 +1,160 @@
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Swami Atmanand School</title>
+   <style>
+     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Background Image Slider */
+    .background-slider {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      background-size: cover;
+      background-position: center;
+      animation: slider 15s infinite;
+    }
+
+    @keyframes slider {
+      0% { background-image: url('image1.jpg'); }
+      33% { background-image: url('image2.jpg'); }
+      66% { background-image: url('image3.jpg'); }
+      100% { background-image: url('image4.jpg'); }
+    }
+
+    /* Navbar */
+    nav {
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 30px;
+      position: relative;
+      z-index: 10;
+     background-color:darkred;
+     
+    }
+
+    /* Logo */
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul li {
+      position: relative;
+      padding: 10px 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    nav ul li:hover > ul {
+      display: block;
+    }
+
+    nav ul ul {
+      display: none;
+      position: absolute;
+      top: 40px;
+      background: rgba(0, 0, 0, 0.9);
+      min-width: 160px;
+      z-index: 100;
+    }
+
+    nav ul ul li {
+      padding: 10px;
+    }
+
+    nav ul ul li a:hover {
+      color: yellow;
+    }
+
+   
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+      }
+      nav ul li {
+        width: 100%;
+      }
+    }
+  </style>
+ </head>
+ <body>
+
+  <!-- Background Slider -->
+  <div class="background-slider"></div>
+
+  <!-- Navbar with Logo -->
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="School Logo">
+      <span>Swami Atmanand School</span>
+    </div>
+    <ul>
+      <li><a href="hom1.html">Home</a></li>
+      <li>
+        <a href="about.html">About Us ▾</a>
+        <ul>
+          <li><a href="vision&mission.html">Vision & Mission</a></li>
+          <li><a href="principal.html">Principal's Message</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="acadmy.html">Academics ▾</a>
+        <ul>
+          <li><a href="Admision.html">Admission</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+        </ul>
+      </li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content">    
+ </div>
+ </body>
+ </html>
