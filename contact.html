@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Contact Us - School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 2px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .contact-info, .contact-form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .contact-info ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .contact-info li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+    <p></p>
+</header>
+
+<main>
+    <section class="contact-info">
+        <h2 class="section-title">Contact Information</h2>
+        <ul>
+            <li><strong>Email:</strong> <a href="anilkudiyam454@gmail.com">anilkudiyam454@gmail.com</a></li>
+            <li><strong>Phone:</strong>7725091210 </li>
+            <li><strong>Address:</strong>Bijapur Chhattisgarh</li>
+        </ul>
+    </section>
+
+    <section class="contact-form">
+        <h2 class="section-title">Get in Touch</h2>
+        <form action="/submit_form" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+            
+            <button type="submit"><a href="message.html">Send Message</a></button>
+        </form>
+    </section>
+</main>
+
+
+
+</body>
+</html>
